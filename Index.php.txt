@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPY Infotech</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f7fa;
+      color: #333;
+    }
+    header {
+      background: #0a3d62;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      max-width: 120px;
+      display: block;
+      margin: 0 auto 10px;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+    h2 {
+      color: #0a3d62;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 5px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      background: #fff;
+      margin: 8px 0;
+      padding: 10px;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #0a3d62;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Make sure your logo file is named "logo.png" and in the same folder -->
+    <img src="logo.png" alt="SPY Infotech Logo">
+    <h1>SPY Infotech</h1>
+    <p><em>Tech you can't find elsewhere</em></p>
+  </header>
+
+  <div class="container">
+    <h2>Contact Information</h2>
+    <p><strong>Phone:</strong> 7066699048</p>
+    <p><strong>Email:</strong> contact.spyinfotech@gmail.com</p>
+    <p><strong>Address:</strong> Manewada, Nagpur, Maharashtra 440027</p>
+
+    <h2>Product Categories</h2>
+    <ul id="categories">
+      <li>Display Cables</li>
+      <li>HDD</li>
+    </ul>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 SPY Infotech. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
