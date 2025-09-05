@@ -1,353 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <title>EPBW Home</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
-
-    <?php include_once('includes/css.php'); ?>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPY Infotech</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      background: url('https://i.ibb.co/0M9cF3V/tech-background.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+    header {
+      background: rgba(0,0,0,0.6);
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      max-width: 120px;
+    }
+    header h1 {
+      margin: 10px 0 5px;
+      font-size: 32px;
+    }
+    header p {
+      font-style: italic;
+      font-size: 16px;
+      color: #ddd;
+    }
+    section {
+      padding: 40px 20px;
+      background: rgba(0,0,0,0.7);
+      margin: 20px auto;
+      border-radius: 10px;
+      max-width: 1000px;
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 20px;
+      color: #00e0ff;
+    }
+    /* Category Cards */
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 10px;
+      padding: 20px;
+      width: 200px;
+      text-align: center;
+      transition: transform 0.3s, background 0.3s;
+      cursor: pointer;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      background: rgba(0, 224, 255, 0.2);
+    }
+    .card h3 {
+      margin: 10px 0;
+      color: #00e0ff;
+    }
+    footer {
+      margin-top: 30px;
+      padding: 15px;
+      background: rgba(0,0,0,0.8);
+      font-size: 14px;
+      text-align: center;
+    }
+  </style>
 </head>
-
 <body>
-    <!-- header file -->
-    <?php include_once('includes/header.php'); ?>
+  <header>
+    <img src="logo.png" alt="SPY Infotech Logo">
+    <h1>SPY Infotech</h1>
+    <p>Tech you can't find elsewhere</p>
+  </header>
 
-    <!-- container-main-body body -->
+  <section>
+    <h2>Contact Us</h2>
+    <p>Phone: 7066699048</p>
+    <p>Email: contact.spyinfotech@gmail.com</p>
+    <p>Address: 92, New Dhyneshwar Nagar, Manewada Road, Nagpur, Maharashtra 440027</p>
+  </section>
 
-    <!-- Carousel Start -->
-    <div class="container-fluid mb-3">
-        <div class="row px-xl-5">
-            <div class="col-lg-12">
-                <div id="header-carousel" class="carousel slide carousel-fade mb-30 mb-lg-0" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#header-carousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#header-carousel" data-slide-to="1"></li>
-                        <li data-target="#header-carousel" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item position-relative active" style="height: 430px;">
-                            <img class="position-absolute w-100 h-100" src="img/main-market-1.jpg" style="object-fit: cover;">
-                            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                                <div class="p-3" style="max-width: 700px;">
-                                    <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">Sitabuldi Main Market</h1>
-                                    <p class="mx-md-5 px-5 animate__animated animate__bounceIn">Lorem rebum magna amet lorem magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum diam</p>
-                                    <a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="#">Explore More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item position-relative" style="height: 430px;">
-                            <img class="position-absolute w-100 h-100" src="img/main-market-3.jpg" style="object-fit: cover;">
-                            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                                <div class="p-3" style="max-width: 700px;">
-                                    <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">Cotton Market</h1>
-                                    <p class="mx-md-5 px-5 animate__animated animate__bounceIn">Lorem rebum magna amet lorem magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum diam</p>
-                                    <a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="#">Explore More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item position-relative" style="height: 430px;">
-                            <img class="position-absolute w-100 h-100" src="img/main-market-5.jpg" style="object-fit: cover;">
-                            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                                <div class="p-3" style="max-width: 700px;">
-                                    <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">Sarafa Bazaar</h1>
-                                    <p class="mx-md-5 px-5 animate__animated animate__bounceIn">Lorem rebum magna amet lorem magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum diam</p>
-                                    <a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="#">Explore More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <section>
+    <h2>Our Categories</h2>
+    <div class="card-container">
+      <div class="card"><h3>Display Cables</h3></div>
+      <div class="card"><h3>HDD</h3></div>
+      <div class="card"><h3>RAM</h3></div>
+      <div class="card"><h3>SMPS</h3></div>
+      <div class="card"><h3>Motherboards</h3></div>
     </div>
-    <!-- Carousel End -->
+  </section>
 
-
-    <!-- Categories Start -->
-    <div class="container-fluid pt-5">
-        <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-secondary pr-3">Categories</span></h2>
-        <div class="row px-xl-5 pb-3">
-            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                <a class="text-decoration-none" href="">
-                    <div class="cat-item d-flex align-items-center mb-4">
-                        <div class="overflow-hidden" style="width: 100px; height: 100px;">
-                            <img class="img-fluid" src="img/cat-1.jpg" alt="">
-                        </div>
-                        <div class="flex-fill pl-3">
-                            <h6>Category Name</h6>
-                            <small class="text-body">100 Products</small>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                <a class="text-decoration-none" href="">
-                    <div class="cat-item img-zoom d-flex align-items-center mb-4">
-                        <div class="overflow-hidden" style="width: 100px; height: 100px;">
-                            <img class="img-fluid" src="img/cat-2.jpg" alt="">
-                        </div>
-                        <div class="flex-fill pl-3">
-                            <h6>Category Name</h6>
-                            <small class="text-body">100 Products</small>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                <a class="text-decoration-none" href="">
-                    <div class="cat-item img-zoom d-flex align-items-center mb-4">
-                        <div class="overflow-hidden" style="width: 100px; height: 100px;">
-                            <img class="img-fluid" src="img/cat-3.jpg" alt="">
-                        </div>
-                        <div class="flex-fill pl-3">
-                            <h6>Category Name</h6>
-                            <small class="text-body">100 Products</small>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                <a class="text-decoration-none" href="">
-                    <div class="cat-item img-zoom d-flex align-items-center mb-4">
-                        <div class="overflow-hidden" style="width: 100px; height: 100px;">
-                            <img class="img-fluid" src="img/cat-4.jpg" alt="">
-                        </div>
-                        <div class="flex-fill pl-3">
-                            <h6>Category Name</h6>
-                            <small class="text-body">100 Products</small>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                <a class="text-decoration-none" href="">
-                    <div class="cat-item img-zoom d-flex align-items-center mb-4">
-                        <div class="overflow-hidden" style="width: 100px; height: 100px;">
-                            <img class="img-fluid" src="img/cat-4.jpg" alt="">
-                        </div>
-                        <div class="flex-fill pl-3">
-                            <h6>Category Name</h6>
-                            <small class="text-body">100 Products</small>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                <a class="text-decoration-none" href="">
-                    <div class="cat-item img-zoom d-flex align-items-center mb-4">
-                        <div class="overflow-hidden" style="width: 100px; height: 100px;">
-                            <img class="img-fluid" src="img/cat-3.jpg" alt="">
-                        </div>
-                        <div class="flex-fill pl-3">
-                            <h6>Category Name</h6>
-                            <small class="text-body">100 Products</small>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                <a class="text-decoration-none" href="">
-                    <div class="cat-item img-zoom d-flex align-items-center mb-4">
-                        <div class="overflow-hidden" style="width: 100px; height: 100px;">
-                            <img class="img-fluid" src="img/cat-2.jpg" alt="">
-                        </div>
-                        <div class="flex-fill pl-3">
-                            <h6>Category Name</h6>
-                            <small class="text-body">100 Products</small>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                <a class="text-decoration-none" href="">
-                    <div class="cat-item img-zoom d-flex align-items-center mb-4">
-                        <div class="overflow-hidden" style="width: 100px; height: 100px;">
-                            <img class="img-fluid" src="img/cat-1.jpg" alt="">
-                        </div>
-                        <div class="flex-fill pl-3">
-                            <h6>Category Name</h6>
-                            <small class="text-body">100 Products</small>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                <a class="text-decoration-none" href="">
-                    <div class="cat-item img-zoom d-flex align-items-center mb-4">
-                        <div class="overflow-hidden" style="width: 100px; height: 100px;">
-                            <img class="img-fluid" src="img/cat-2.jpg" alt="">
-                        </div>
-                        <div class="flex-fill pl-3">
-                            <h6>Category Name</h6>
-                            <small class="text-body">100 Products</small>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                <a class="text-decoration-none" href="">
-                    <div class="cat-item img-zoom d-flex align-items-center mb-4">
-                        <div class="overflow-hidden" style="width: 100px; height: 100px;">
-                            <img class="img-fluid" src="img/cat-1.jpg" alt="">
-                        </div>
-                        <div class="flex-fill pl-3">
-                            <h6>Category Name</h6>
-                            <small class="text-body">100 Products</small>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                <a class="text-decoration-none" href="">
-                    <div class="cat-item img-zoom d-flex align-items-center mb-4">
-                        <div class="overflow-hidden" style="width: 100px; height: 100px;">
-                            <img class="img-fluid" src="img/cat-4.jpg" alt="">
-                        </div>
-                        <div class="flex-fill pl-3">
-                            <h6>Category Name</h6>
-                            <small class="text-body">100 Products</small>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                <a class="text-decoration-none" href="">
-                    <div class="cat-item img-zoom d-flex align-items-center mb-4">
-                        <div class="overflow-hidden" style="width: 100px; height: 100px;">
-                            <img class="img-fluid" src="img/cat-3.jpg" alt="">
-                        </div>
-                        <div class="flex-fill pl-3">
-                            <h6>Category Name</h6>
-                            <small class="text-body">100 Products</small>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-    <!-- Categories End -->
-
-
-    <!-- Market Start -->
-    <div class="container-fluid pt-5 pb-3">
-        <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-secondary pr-3">Popular Markets</span></h2>
-        <div class="row px-xl-5">
-            <div class="col-md-3">
-                <div class="product-offer mb-30" style="height: 300px;">
-                    <img class="img-fluid" src="img/market-1.jpg" alt="market-img">
-                    <div class="offer-text">
-                        <h3 class="text-white mb-3">Market Name 1</h3>
-                        <!-- <h6 class="text-white text-uppercase">Save 20%</h6> -->
-                        <p class="text-white ">Address of the shop will be displade.</p>
-                        <a href="" class="btn btn-primary">Explore More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="product-offer mb-30" style="height: 300px;">
-                    <img class="img-fluid" src="img/market-2.jpg" alt="market-img">
-                    <div class="offer-text">
-                        <h3 class="text-white mb-3">Market Name 2</h3>
-                        <!-- <h6 class="text-white text-uppercase">Save 20%</h6> -->
-                        <p class="text-white ">Address of the shop will be displade.</p>
-                        <a href="" class="btn btn-primary">Explore More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="product-offer mb-30" style="height: 300px;">
-                    <img class="img-fluid" src="img/market-3.jpg" alt="market-img">
-                    <div class="offer-text">
-                        <h3 class="text-white mb-3">Market Name 3</h3>
-                        <!-- <h6 class="text-white text-uppercase">Save 20%</h6> -->
-                        <p class="text-white ">Address of the shop will be displade.</p>
-                        <a href="" class="btn btn-primary">Explore More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="product-offer mb-30" style="height: 300px;">
-                    <img class="img-fluid" src="img/market-2.jpg" alt="market-img">
-                    <div class="offer-text">
-                        <h3 class="text-white mb-3">Market Name 4</h3>
-                        <!-- <h6 class="text-white text-uppercase">Save 20%</h6> -->
-                        <p class="text-white ">Address of the shop will be displade.</p>
-                        <a href="" class="btn btn-primary">Explore More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Market End -->
-
-    <!-- Shops Start -->
-    <div class="container-fluid py-5">
-        <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-secondary pr-3">Popular Shops</span></h2>
-        <div class="row px-xl-5">
-            <div class="col">
-                <div class="owl-carousel vendor-carousel">
-                    <div class="bg-light p-4">
-                        <img src="img/main-market-1.jpg" alt="">
-                        <h3 class="text-black mb-3">Shop Name 1</h3>
-                        <p class="text-black">Lorem, ipsum dolor.</p>
-                        <a href="" class="btn btn-primary">Know More</a>
-                    </div>
-                    <div class="bg-light p-4">
-                        <img src="img/vendor-2.jpg" alt="">
-                        <h3 class="text-black mb-3">Shop Name 2</h3>
-                        <p class="text-black">Lorem, ipsum dolor.</p>
-                        <a href="" class="btn btn-primary">Know More</a>
-                    </div>
-                    <div class="bg-light p-4">
-                        <img src="img/vendor-3.jpg" alt="">
-                        <h3 class="text-black mb-3">Shop Name 4</h3>
-                        <p class="text-black">Lorem, ipsum dolor.</p>
-                        <a href="" class="btn btn-primary">Know More</a>
-                    </div>
-                    <div class="bg-light p-4">
-                        <img src="img/vendor-4.jpg" alt="">
-                        <h3 class="text-black mb-3">Shop Name 5</h3>
-                        <p class="text-black">Lorem, ipsum dolor.</p>
-                        <a href="" class="btn btn-primary">Know More</a>
-                    </div>
-                    <div class="bg-light p-4">
-                        <img src="img/vendor-5.jpg" alt="">
-                        <h3 class="text-black mb-3">Shop Name 6</h3>
-                        <p class="text-black">Lorem, ipsum dolor.</p>
-                        <a href="" class="btn btn-primary">Know More</a>
-                    </div>
-                    <div class="bg-light p-4">
-                        <img src="img/vendor-6.jpg" alt="">
-                        <h3 class="text-black mb-3">Shop Name 7</h3>
-                        <p class="text-black">Lorem, ipsum dolor.</p>
-                        <a href="" class="btn btn-primary">Know More</a>
-                    </div>
-                    <div class="bg-light p-4">
-                        <img src="img/vendor-7.jpg" alt="">
-                        <h3 class="text-black mb-3">Shop Name 8</h3>
-                        <p class="text-black">Lorem, ipsum dolor.</p>
-                        <a href="" class="btn btn-primary">Know More</a>
-                    </div>
-                    <div class="bg-light p-4">
-                        <img src="img/vendor-8.jpg" alt="">
-                        <h3 class="text-black mb-3">Shop Name 9</h3>
-                        <p class="text-black">Lorem, ipsum dolor.</p>
-                        <a href="" class="btn btn-primary">Know More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Shops End -->
-    
-    <!-- container-main-body end -->
-
-    
-
-
-    <!-- footer file -->
-    <?php include_once('includes/footer.php'); ?>
-   
+  <footer>
+    © 2025 SPY Infotech. All Rights Reserved.
+  </footer>
+</body>
+</html>
