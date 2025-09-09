@@ -8,29 +8,48 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
   <link href="style.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <img src="img/logo.png" alt="SPY Logo" height="36" class="me-2" onerror="this.style.display='none'">
-        <span>SPY Infotech</span>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="categories.html">Categories</a></li>
-          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
-        </ul>
-        <form class="d-flex" role="search">
+  <div class="container-fluid">
+    <!-- Left: Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="img/logo.png" alt="SPY Logo" height="40" class="me-2" onerror="this.style.display='none'">
+      <span>SPY Infotech</span>
+    </a>
+
+    <!-- Mobile toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Center + Right -->
+    <div class="collapse navbar-collapse" id="navMenu">
+      <!-- Center: Nav links -->
+      <ul class="navbar-nav position-absolute top-50 start-50 translate-middle">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="categories.html">Categories</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+
+      <!-- Right: Search + Social -->
+      <div class="ms-auto d-flex align-items-center">
+        <form class="d-flex me-3" role="search">
           <input class="form-control search-input" type="search" placeholder="Search" aria-label="Search">
         </form>
+        <div class="d-flex">
+          <a href="https://wa.me/917066699048" class="nav-link px-2 text-light nav-icon" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/spy_infotech_official/" class="nav-link px-2 text-light nav-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@SPYInfotech" class="nav-link px-2 text-light nav-icon" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="mailto:contact.spyinfotech@gmail.com" class="nav-link px-2 text-light nav-icon" target="_blank"><i class="fas fa-envelope"></i></a>
+        </div>
       </div>
     </div>
-  </nav>
+  </div>
+</nav>
+
+
 
   <main class="container" style="padding-top: 100px;">
     <div class="row g-4">
@@ -40,7 +59,7 @@
         <div class="mt-4">
           <p><strong>Phone:</strong> 7066699048</p>
           <p><strong>Email:</strong> contact.spyinfotech@gmail.com</p>
-          <p><strong>Address:</strong> 92, New Dhyneshwar Nagar, Manewada Road, Nagpur, Maharashtra 440027</p>
+          <p><strong>Address:</strong> SPY Infotech, Manewada Road, Nagpur, Maharashtra 440027</p>
         </div>
         <form class="mt-3">
           <div class="mb-3">
@@ -56,7 +75,7 @@
             <textarea class="form-control search-input" rows="4" placeholder="How can we help?"></textarea>
           </div>
           <button type="button" class="btn btn-accent">Send Message</button>
-          <small class="d-block mt-2 section-muted">*This demo form doesn't send yet. We can wire it up later.</small>
+          <!-- <small class="d-block mt-2 section-muted">*This demo form doesn't send yet. We can wire it up later.</small> -->
         </form>
       </div>
       <div class="col-lg-6" data-aos="fade-left">
@@ -72,7 +91,7 @@
       <div class="row g-4">
         <div class="col-md-4">
           <h5>Address</h5>
-          <p>92, New Dhyneshwar Nagar, Manewada Road,<br>Nagpur, Maharashtra 440027</p>
+          <p>SPY Infotech, Manewada Road,<br>Nagpur, Maharashtra 440027</p>
         </div>
         <div class="col-md-4">
           <h5>Contact</h5>
@@ -84,6 +103,12 @@
         </div>
       </div>
       <hr class="divider my-4">
+      <div class="text-center mt-4">
+        <a href="https://wa.me/917066699048" target="_blank" class="social-link"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/spy_infotech_official/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@SPYInfotech" target="_blank" class="social-link"><i class="fab fa-youtube"></i></a>
+        <a href="mailto:contact.spyinfotech@gmail.com" target="_blank" class="social-link"><i class="fas fa-envelope"></i></a>
+      </div>
       <div class="text-center pb-4">© 2025 SPY Infotech — Tech you can't find elsewhere</div>
     </div>
   </footer>
